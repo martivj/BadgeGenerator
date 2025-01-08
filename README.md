@@ -4,17 +4,16 @@
 
 ## 🔭 Current Projects
 Currently working on private repositories focused on:
-- Education technology platform using React, TypeScript, Vite, Convex and Tauri
-- Personal portfolio built with Next.js and Strapi CMS
-- Upcoming bachelor's project TBD
+- Education technology platform using React + TypeScript + Vite, with a Tauri bundler
+- Personal portfolio built with Next.js 15 and the Strapi 5 headless CMS
+- Upcoming bachelor's project, TBD!
 
 ## 🛠️ Tech Stack
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/-Rust-38B2AC?style=flat-square&logo=rust&logoColor=white)
-++
+![Rust](https://img.shields.io/badge/-Rust-DEA584?style=flat-square&logo=rust&logoColor=black)
 
 ## 📈 GitHub Stats
 <div style="display: flex; justify-content: center; gap: 10px;">
