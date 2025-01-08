@@ -12,11 +12,16 @@
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
 
 ## 📈 GitHub Stats
-<img height=200 align="center" src="https://github-readme-stats-git-master-martivj-private.vercel.app/api?username=martivj&show_icons=true&theme=dracula&line_height=29" />
-<img height=200 align="center" src="https://github-readme-stats-git-master-martivj-private.vercel.app/api/top-langs/?username=martivj&layout=donut&theme=dracula&jupyter%20notebook" />
-
-![Your GitHub stats]()
-![Top Langs]()
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img 
+    height=200 
+    src="https://github-readme-stats-git-master-martivj-private.vercel.app/api?username=martivj&show_icons=true&theme=dracula&line_height=29" 
+    alt="Martin's GitHub Stats - Commits, PRs, Issues and Contributions" />
+  <img 
+    height=200 
+    src="https://github-readme-stats-git-master-martivj-private.vercel.app/api/top-langs/?username=martivj&layout=donut&theme=dracula&jupyter%20notebook" 
+    alt="Martin's Most Used Languages" />
+</div>
 
 ## 🤝 Let's Connect
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/martin-vågseter-jakobsen-57157a224/)
