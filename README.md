@@ -23,7 +23,7 @@ Currently working on private repositories focused on:
     alt="Martin's GitHub Stats - Commits, PRs, Issues and Contributions" />
   <img 
     height=200 
-    src="https://github-readme-stats-git-master-martivj-private.vercel.app/api/top-langs/?username=martivj&layout=donut&theme=dracula&jupyter%20notebook" 
+    src="https://github-readme-stats-git-master-martivj-private.vercel.app/api/top-langs/?username=martivj&layout=donut&theme=dracula&hide=jupyter%20notebook" 
     alt="Martin's Most Used Languages" />
 </div>
 
