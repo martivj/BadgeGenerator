@@ -28,7 +28,7 @@ Currently working on private repositories focused on:
 </div>
 
 ## 🤝 Let's Connect
-[![Portfolio](https://img.shields.io/badge/-Portfolio-000000?style=flat-square&logo=react&logoColor=white)](https://martivj.com)
+[![Portfolio](https://img.shields.io/badge/-Portfolio-000000?style=flat-square&logo=vercel&logoColor=white)](https://martivj.com)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/martin-vågseter-jakobsen-57157a224/)
 
 ---
