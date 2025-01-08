@@ -12,7 +12,7 @@
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
 
 ## 📈 GitHub Stats
-![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=martivj&show_icons=true&theme=dracula)
+![Your GitHub stats](https://github-readme-stats-blue-delta-28.vercel.app/api?username=martivj&show_icons=true&theme=dracula)
 
 ## 🤝 Let's Connect
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/martin-vågseter-jakobsen-57157a224/)
