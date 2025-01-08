@@ -30,6 +30,6 @@ Currently working on private repositories focused on:
 ## 🤝 Let's Connect
 [![Portfolio](https://img.shields.io/badge/-Portfolio-000000?style=flat-square&logo=vercel&logoColor=white)](https://martivj.com)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=in&logoColor=white)](https://linkedin.com/in/martin-vågseter-jakobsen-57157a224/)
-
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/martin-vågseter-jakobsen-57157a224/)
 ---
 ⭐️ From [martivj](https://github.com/martivj)
