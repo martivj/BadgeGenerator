@@ -12,7 +12,7 @@
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
 
 ## 📈 GitHub Stats
-![Your GitHub stats](https://github-readme-stats-git-master-martivj-private.vercel.app/api?username=martivj&show_icons=true&theme=dracula&line_height=28)
+![Your GitHub stats](https://github-readme-stats-git-master-martivj-private.vercel.app/api?username=martivj&show_icons=true&theme=dracula&line_height=29)
 ![Top Langs](https://github-readme-stats-git-master-martivj-private.vercel.app/api/top-langs/?username=martivj&layout=donut&theme=dracula)
 
 ## 🤝 Let's Connect
