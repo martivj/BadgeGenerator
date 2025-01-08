@@ -2,14 +2,19 @@
 
 ⚛️ Physics MSc turned 💻 Developer | 🌐 Web & 📱 App Development | 🎓 BSc Informatics
 
-## 🔭 Current Projects *(Private repositories...)*
-- [IdeaBankSLI](https://github.com/martivj/IdeaBankSLI) - Teaching resource management for adult education 
-- [Portfolio](https://github.com/martivj/Portfolio) - Personal portfolio website for myself
+## 🔭 Current Projects
+Currently working on private repositories focused on:
+- Education technology platform using React, TypeScript, Vite, Convex and Tauri
+- Personal portfolio built with Next.js and Strapi CMS
+- Upcoming bachelor's project TBD
 
 ## 🛠️ Tech Stack
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+![Convex](https://img.shields.io/badge/-Convex-FF0000?style=flat-square&logo=database&logoColor=white)
+++
 
 ## 📈 GitHub Stats
 <div style="display: flex; justify-content: center; gap: 10px;">
@@ -24,8 +29,8 @@
 </div>
 
 ## 🤝 Let's Connect
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/martin-vågseter-jakobsen-57157a224/)
 [![Portfolio](https://img.shields.io/badge/-Portfolio-000000?style=flat-square&logo=react&logoColor=white)](https://martivj.com)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/martin-vågseter-jakobsen-57157a224/)
 
 ---
 ⭐️ From [martivj](https://github.com/martivj)
