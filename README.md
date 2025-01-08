@@ -13,7 +13,7 @@ Currently working on private repositories focused on:
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
-![Convex](https://img.shields.io/badge/-Convex-FF0000?style=flat-square&logo=database&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/-Rust-38B2AC?style=flat-square&logo=rust-css&logoColor=white)
 ++
 
 ## 📈 GitHub Stats
