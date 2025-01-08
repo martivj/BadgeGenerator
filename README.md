@@ -2,8 +2,8 @@
 
 ⚛️ Physics MSc turned 💻 Developer | 🌐 Web & 📱 App Development | 🎓 BSc Informatics
 
-## 🔭 Current Projects
-- [IdeaBankSLI](https://github.com/martivj/IdeaBankSLI) - Teaching resource management for adult education
+## 🔭 Current Projects *(Private repositories...)*
+- [IdeaBankSLI](https://github.com/martivj/IdeaBankSLI) - Teaching resource management for adult education 
 - [Portfolio](https://github.com/martivj/Portfolio) - Personal portfolio website for myself
 
 ## 🛠️ Tech Stack
