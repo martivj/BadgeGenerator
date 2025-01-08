@@ -16,7 +16,10 @@ Currently working on private repositories focused on:
 [![Rust](https://img.shields.io/badge/Rust-black?style=for-the-badge&logo=rust&logoColor=#E57324)](https://www.rust-lang.org/)
 [![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev/)
 [![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev/)
+[![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](https://www.python.org/)
 [![]()]()
+
+More (add later): Java, Spring, Tauri, Convex, AWS Amplify, Vite, Next.js, GraphQL, shadcn, Express, Apollo, MongoDB, DynamoDB, MySQL, Cognito, AppSync, Maven, JavaFX, JUnit, Strapi, Flask ... 
 
 ## 📈 GitHub Stats
 <div style="display: flex; justify-content: center; gap: 10px;">
