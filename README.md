@@ -13,7 +13,7 @@
 
 ## 📈 GitHub Stats
 ![Your GitHub stats](https://github-readme-stats-git-master-martivj-private.vercel.app/api?username=martivj&show_icons=true&theme=dracula&line_height=29)
-![Top Langs](https://github-readme-stats-git-master-martivj-private.vercel.app/api/top-langs/?username=martivj&layout=donut&theme=dracula)
+![Top Langs](https://github-readme-stats-git-master-martivj-private.vercel.app/api/top-langs/?username=martivj&layout=donut&theme=dracula&line_height=28)
 
 ## 🤝 Let's Connect
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/martin-vågseter-jakobsen-57157a224/)
