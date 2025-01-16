@@ -12,6 +12,19 @@ class BadgeConfig(TypedDict, total=False):
     label: str  # Optional override for left-hand text
     label_color: str  # Optional background color for left part
 
+import requests
+
+def shorten_url(long_url: str) -> str:
+    """Shorten a URL using TinyURL's API"""
+    try:
+        response = requests.get(f'http://tinyurl.com/api-create.php?url={long_url}')
+        if response.status_code == 200:
+            return response.text.strip()
+        return long_url  # Return original if shortening fails
+    except Exception as e:
+        print(f"Warning: URL shortening failed - {e}")
+        return long_url
+
 # Load badge configurations from JSON file
 def load_badge_configs() -> Dict[str, BadgeConfig]:
     """Load badge configurations from JSONC file"""
@@ -191,7 +204,11 @@ def process_icons():
             params.append(f'labelColor={config["label_color"].strip("#")}')
             
         query_string = '&'.join(params)
-        badge_def.append(f"[{name}-badge]: https://img.shields.io/badge/{config['name']}-{color}?{query_string}\n")
+        long_url = f"https://img.shields.io/badge/{config['name']}-{color}?{query_string}"
+        
+        # Shorten the URL
+        short_url = shorten_url(long_url)
+        badge_def.append(f"[{name}-badge]: {short_url}\n")
         badge_definitions.append("\n".join(badge_def))
 
     # Write the complete badges.md file
