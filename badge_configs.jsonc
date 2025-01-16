@@ -1,0 +1,235 @@
+{
+  "tauri": {
+    "name": "Tauri",
+    "color": "#ffc131",
+    "url": "https://tauri.app/",
+    "label_color": "#24292e"
+  },
+  "typescript": {
+    "name": "TypeScript",
+    "color": "#007acc",
+    "url": "https://www.typescriptlang.org/",
+    "label_color": "#24292e"
+  },
+  "react": {
+    "name": "React",
+    "color": "#61dafb",
+    "logo_color": "#61DAFB",
+    "url": "https://react.dev/",
+    "label_color": "#24292e"
+  },
+  "nodejs": {
+    "name": "Node.js",
+    "color": "#56a344",
+    "url": "https://nodejs.org/",
+    "label_color": "#24292e"
+  },
+  "tailwindcss": {
+    "name": "Tailwind",
+    "color": "#44aab2",
+    "url": "https://tailwindcss.com/",
+    "label_color": "#24292e"
+  },
+  // "rust": {
+  //   "name": "Rust",
+  //   "color": "#000000",
+  //   "url": "https://www.rust-lang.org/",
+  //   "label_color": "#ffffff"
+  // },
+  "dart": {
+    "name": "Dart",
+    "color": "#0079b3",
+    "url": "https://dart.dev/",
+    "label_color": "#24292e"
+  },
+  "flutter": {
+    "name": "Flutter",
+    "color": "#02569B",
+    "url": "https://flutter.dev/",
+    "label_color": "#24292e"
+  },
+  "python": {
+    "name": "Python",
+    "color": "#FFD43B",
+    "url": "https://www.python.org/",
+    "label_color": "#24292e"
+  },
+  // "graphql": {
+  //   "name": "GraphQL",
+  //   "color": "#E10098",
+  //   "url": "https://graphql.org/",
+  //   "label_color": "#24292e"
+  // },
+  "nextjs": {
+    "name": "Next.js",
+    "color": "#000000",
+    "url": "https://nextjs.org/",
+    "label_color": "#ffffff"
+  },
+  "vite": {
+    "name": "Vite",
+    "color": "#a058fe",
+    "logo_color": "#a058fe",
+    "url": "https://vitejs.dev/",
+    "label_color": "#24292e"
+  },
+  "mongodb": {
+    "name": "MongoDB",
+    "color": "#47A248",
+    "url": "https://www.mongodb.com/",
+    "label_color": "#24292e"
+  },
+  "mysql": {
+    "name": "MySQL",
+    "color": "#4479A1",
+    "logo_color": "#ffffff",
+    "url": "https://www.mysql.com/",
+    "label_color": "#24292e"
+  },
+  "aws_dynamodb": {
+    "name": "AWS_DynamoDB",
+    "color": "#2d72b8",
+    "url": "https://aws.amazon.com/dynamodb/",
+    "label_color": "#24292e"
+  },
+  "aws": {
+    "name": "AWS",
+    "color": "#252f3e",
+    "url": "https://aws.amazon.com/",
+    "label_color": "#ffffff"
+  },
+  // "spring": {
+  //   "name": "Spring",
+  //   "color": "#6DB33F",
+  //   "url": "https://spring.io/",
+  //   "label_color": "#24292e"
+  // },
+  "spring_boot": {
+    "name": "Spring_Boot",
+    "color": "#6DB33F",
+    "url": "https://spring.io/projects/spring-boot",
+    "label_color": "#24292e"
+  },
+  "express_js": {
+    "name": "Express_js",
+    "color": "#0d1117",
+    "url": "https://expressjs.com/",
+    "label_color": "#ffffff"
+  },
+  "apollo_graphql": {
+    "name": "Apollo_GraphQL",
+    "color": "#4b325d",
+    "logo_color": "#ffffff",
+    "url": "https://www.apollographql.com/",
+    "label_color": "#24292e"
+  },
+  "flask": {
+    "name": "Flask",
+    "color": "#000000",
+    "url": "https://flask.palletsprojects.com/",
+    "label_color": "#ffffff"
+  },
+  "strapi": {
+    "name": "Strapi",
+    "color": "#2F2E8B",
+    "url": "https://strapi.io/",
+    "label_color": "#24292e"
+  },
+  "linkedin": {
+    "name": "LinkedIn",
+    "color": "#0077B5",
+    "url": "https://linkedin.com/in/martin-vågseter-jakobsen-57157a224/",
+    "label_color": "#ffffff"
+  },
+  "vercel": {
+    "name": "Vercel",
+    "color": "#000000",
+    "logo_color": "#000000",
+    "url": "https://vercel.com/",
+    "label_color": "#ffffff"
+  },
+  "convex": {
+    "name": "Convex",
+    "color": "#ffffff",
+    "url": "https://convex.dev/",
+    "label_color": "#24292e"
+  },
+  "java": {
+    "name": "Java",
+    "color": "#5382a1",
+    "url": "https://www.java.com/",
+    "label_color": "#24292e"
+  },
+  "shadcn": {
+    "name": "shadcn",
+    "color": "#000000",
+    "url": "https://ui.shadcn.com/",
+    "label_color": "#ffffff"
+  },
+  "render": {
+    "name": "Render",
+    "color": "#000000",
+    "url": "https://render.com/",
+    "label_color": "#ffffff"
+  },
+  "maven": {
+    "name": "Maven",
+    "color": "#bb1a42",
+    "url": "https://maven.apache.org/",
+    "label_color": "#24292e"
+  },
+  "neon": {
+    "name": "Neon",
+    "color": "#ffffff",
+    "url": "https://neon-lang.org/",
+    "label_color": "#24292e"
+  },
+  "postgresql": {
+    "name": "PostgreSQL",
+    "color": "#336791",
+    "url": "https://www.postgresql.org/",
+    "label_color": "#24292e"
+  },
+  "cypress": {
+    "name": "Cypress",
+    "color": "#17202C",
+    "url": "https://www.cypress.io/",
+    "label_color": "#ffffff"
+  },
+  "vitest": {
+    "name": "Vitest",
+    "color": "#74951f",
+    "url": "https://vitest.dev/",
+    "label_color": "#24292e"
+  },
+  "junit": {
+    "name": "JUnit",
+    "color": "#25a162",
+    "url": "https://junit.org/",
+    "label_color": "#24292e"
+  },
+  "amplify": {
+    "name": "AWS_Amplify",
+    "color": "#ffb708",
+    "url": "https://aws.amazon.com/amplify/",
+    "label_color": "#24292e"
+  },
+  "firebase": {
+    "name": "Firebase",
+    "color": "#ffca28",
+    "url": "https://firebase.google.com/",
+    "label_color": "#24292e"
+  },
+  "aws_s3": {
+    "name": "AWS_S3",
+    "color": "#e3594a",
+    "url": "https://aws.amazon.com/s3/",
+    "label_color": "#24292e"
+  },
+  "docker": {
+    "name": "Docker",
+    "color": "#2496ed",
+    "url": "https://www.docker.com/",
+    "label_color": "#24292e"
+  }
+}
