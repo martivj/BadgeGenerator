@@ -1,5 +1,4 @@
 [//]: # "Generated Badge Definitions"
-
 [//]: # "Tauri Colors"
 [tauri-badge-color]: #ffc131
 [tauri-logo_color]: none
@@ -169,7 +168,7 @@
 [nextjs-badge]: https://tinyurl.com/2bxnhgfa
 [//]: # "Vite Badge Definition"
 [vite-url]: https://vitejs.dev/
-[vite-badge]: https://tinyurl.com/26lm4l5d
+[vite-badge]: https://tinyurl.com/2c9wghoe
 [//]: # "MongoDB Badge Definition"
 [mongodb-url]: https://www.mongodb.com/
 [mongodb-badge]: https://tinyurl.com/2bjzwupl
@@ -245,113 +244,151 @@
 [//]: # "Docker Badge Definition"
 [docker-url]: https://www.docker.com/
 [docker-badge]: https://tinyurl.com/278rykn6
+
 # Usage Examples:
+
 ## Tauri
+
 [![tauri][tauri-badge]][tauri-url]
 
 ## TypeScript
+
 [![typescript][typescript-badge]][typescript-url]
 
 ## React
+
 [![react][react-badge]][react-url]
 
 ## Node.js
+
 [![nodejs][nodejs-badge]][nodejs-url]
 
 ## Tailwind
+
 [![tailwindcss][tailwindcss-badge]][tailwindcss-url]
 
 ## Dart
+
 [![dart][dart-badge]][dart-url]
 
 ## Flutter
+
 [![flutter][flutter-badge]][flutter-url]
 
 ## Python
+
 [![python][python-badge]][python-url]
 
 ## Next.js
+
 [![nextjs][nextjs-badge]][nextjs-url]
 
 ## Vite
+
 [![vite][vite-badge]][vite-url]
 
 ## MongoDB
+
 [![mongodb][mongodb-badge]][mongodb-url]
 
 ## MySQL
+
 [![mysql][mysql-badge]][mysql-url]
 
 ## AWS DynamoDB
+
 [![aws_dynamodb][aws_dynamodb-badge]][aws_dynamodb-url]
 
 ## AWS
+
 [![aws][aws-badge]][aws-url]
 
 ## Spring Boot
+
 [![spring_boot][spring_boot-badge]][spring_boot-url]
 
 ## Express js
+
 [![express_js][express_js-badge]][express_js-url]
 
 ## Apollo GraphQL
+
 [![apollo_graphql][apollo_graphql-badge]][apollo_graphql-url]
 
 ## Flask
+
 [![flask][flask-badge]][flask-url]
 
 ## Strapi
+
 [![strapi][strapi-badge]][strapi-url]
 
 ## LinkedIn
+
 [![linkedin][linkedin-badge]][linkedin-url]
 
 ## Vercel
+
 [![vercel][vercel-badge]][vercel-url]
 
 ## Convex
+
 [![convex][convex-badge]][convex-url]
 
 ## Java
+
 [![java][java-badge]][java-url]
 
 ## shadcn
+
 [![shadcn][shadcn-badge]][shadcn-url]
 
 ## Render
+
 [![render][render-badge]][render-url]
 
 ## Maven
+
 [![maven][maven-badge]][maven-url]
 
 ## Neon
+
 [![neon][neon-badge]][neon-url]
 
 ## PostgreSQL
+
 [![postgresql][postgresql-badge]][postgresql-url]
 
 ## Cypress
+
 [![cypress][cypress-badge]][cypress-url]
 
 ## Vitest
+
 [![vitest][vitest-badge]][vitest-url]
 
 ## JUnit
+
 [![junit][junit-badge]][junit-url]
 
 ## AWS Amplify
+
 [![amplify][amplify-badge]][amplify-url]
 
 ## Firebase
+
 [![firebase][firebase-badge]][firebase-url]
 
 ## AWS S3
+
 [![aws_s3][aws_s3-badge]][aws_s3-url]
 
 ## Docker
+
 [![docker][docker-badge]][docker-url]
 
 # All
+
 [![tauri][tauri-badge]][tauri-url]
 [![typescript][typescript-badge]][typescript-url]
 [![react][react-badge]][react-url]
@@ -387,4 +424,3 @@
 [![firebase][firebase-badge]][firebase-url]
 [![aws_s3][aws_s3-badge]][aws_s3-url]
 [![docker][docker-badge]][docker-url]
-

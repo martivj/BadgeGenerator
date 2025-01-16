@@ -69,7 +69,6 @@
   "vite": {
     "name": "Vite",
     "color": "#a058fe",
-    "logo_color": "#a058fe",
     "url": "https://vitejs.dev/",
     "label_color": "#24292e"
   },

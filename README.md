@@ -154,7 +154,7 @@
 [nextjs-badge]: https://tinyurl.com/2bxnhgfa
 [//]: # "Vite Badge Definition"
 [vite-url]: https://vitejs.dev/
-[vite-badge]: https://tinyurl.com/26lm4l5d
+[vite-badge]: https://tinyurl.com/2c9wghoe
 [//]: # "MongoDB Badge Definition"
 [mongodb-url]: https://www.mongodb.com/
 [mongodb-badge]: https://tinyurl.com/2bjzwupl
