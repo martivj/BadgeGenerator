@@ -1,5 +1,7 @@
 import json
 import base64
+import os
+import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import Dict, TypedDict
@@ -40,10 +42,11 @@ def shorten_url(long_url: str, use_tinyurl: bool = True) -> str:
 # Load badge configurations from JSON file
 def load_badge_configs() -> Dict[str, BadgeConfig]:
     """Load badge configurations from JSONC file"""
-    config_path = Path("badge_configs.jsonc")
-    if not config_path.exists():
-        raise FileNotFoundError("badge_configs.jsonc not found")
-
+    # Get absolute path of script directory
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    config_path = os.path.join(script_dir, "badge_configs.jsonc")
+    if not os.path.exists(config_path):
+        raise FileNotFoundError(f"badge_configs.jsonc not found at {config_path}")
     # Read file and remove comments
     with open(config_path, "r") as f:
         content = f.read()
@@ -139,37 +142,59 @@ def process_icons(use_tinyurl: bool = True):
     Args:
         use_tinyurl: If True, use TinyURL API to shorten badge URLs
     """
+    # Track statistics
+    stats = {
+        "new_svg": 0,
+        "unchanged_svg": 0,
+        "reused_url": 0,
+        "new_url": 0,
+        "simple_badge": 0,
+        "warnings": 0,
+    }
 
-    # Setup directories and clear existing files
-    icon_dir = Path("assets/icons")
-    base64_dir = Path("assets/base64")
+    # Resolve paths
+    script_dir = Path(os.path.dirname(os.path.abspath(__file__)))
+    base64_dir = script_dir / "base64"
+    output_file = script_dir / "badges.md"
+
+    # First read existing badge definitions to extract current TinyURLs
+    existing_tinyurls = {}
+    if output_file.exists():
+        with open(output_file) as f:
+            content = f.read()
+            # Find all badge definitions using regex
+            badge_defs = re.findall(
+                r"\[(\w+)-badge\]: (https://tinyurl\.com/\w+)", content
+            )
+            existing_tinyurls = dict(badge_defs)
+
     base64_dir.mkdir(exist_ok=True)
-
-    for old_file in base64_dir.glob("*.b64"):
-        old_file.unlink()
-        print(f"Removed old file: {old_file}")
-
-    # Track processed badges and store definitions
     processed_badges = set()
     color_definitions = []
     badge_definitions = []
     base64_contents = {}
 
-    # Process SVG icons first to get base64 contents
-    if icon_dir.exists():
-        svg_files = list(icon_dir.glob("*.svg"))
+    # Read existing base64 files to compare content
+    existing_base64 = {}
+    for b64_file in base64_dir.glob("*.b64"):
+        name = b64_file.stem.rsplit("_", 1)[0]
+        with open(b64_file) as f:
+            existing_base64[name] = f.read().strip()
+
+    # Process SVG files
+    if (script_dir / "icons").exists():
+        svg_files = list((script_dir / "icons").glob("*.svg"))
         print(f"\nFound {len(svg_files)} SVG files to process")
 
         for svg_path in svg_files:
             name = svg_path.stem
             if name not in BADGE_CONFIGS:
-                print(f"Warning: No config found for {name}")
+                print(f"⚠️  Warning: No config found for {name}")
+                stats["warnings"] += 1
                 continue
 
             print(f"\nProcessing {svg_path.name}...")
-
-            # Read and process SVG
-            with open(svg_path, "r") as f:
+            with open(svg_path) as f:
                 svg_content = f.read()
 
             config = BADGE_CONFIGS[name]
@@ -182,39 +207,59 @@ def process_icons(use_tinyurl: bool = True):
                 modified_svg = svg_content
                 suffix = "original"
 
-            # Store base64 content
+            # Generate new base64
             base64_str = base64.b64encode(modified_svg.encode()).decode()
             base64_contents[name] = base64_str
 
-            # Save to file
+            # Check if content changed
+            content_changed = (
+                name not in existing_base64 or base64_str != existing_base64[name]
+            )
+
+            # Save base64 file
             output_path = base64_dir / f"{name}_{suffix}.b64"
             with open(output_path, "w") as f:
                 f.write(base64_str)
-            print(f"✓ Generated {output_path}")
+
+            if content_changed:
+                print(f"✓ Generated new {output_path}")
+            else:
+                print(f"✓ Content unchanged for {output_path}")
 
             processed_badges.add(name)
 
-    # Generate all color definitions first
+            if content_changed:
+                print(f"🆕 Generated new {output_path}")
+                stats["new_svg"] += 1
+            else:
+                print(f"♻️  Content unchanged for {output_path}")
+                stats["unchanged_svg"] += 1
+
+    # Generate badge definitions
     for name, config in BADGE_CONFIGS.items():
+        # Generate color definitions
         color_def = [f"[//]: # \"{config['name']} Colors\""]
         color_def.append(f"[{name}-badge-color]: {config.get('color', 'none')}")
         color_def.append(f"[{name}-logo_color]: {config.get('logo_color', 'none')}")
         color_def.append(f"[{name}-label_color]: {config.get('label_color', 'none')}\n")
         color_definitions.append("\n".join(color_def))
 
-    # Then generate all badge definitions
-    for name, config in BADGE_CONFIGS.items():
-        badge_def = [f"[//]: # \"{config['name']} Badge Definition\""]
+        # Generate badge definitions
+        badge_def = []
+        # badge_def.append[f"<!-- {config['name']} Badge Definition-->"]
         badge_def.append(f"[{name}-url]: {config['url']}")
 
         # Build badge URL
         color = config["color"].strip("#")
-        logo_color = config.get("logo_color", "#000000").strip("#")
+        logo_color = config.get("logo_color", "#000000")
         base64_content = base64_contents.get(name)
 
         logo = f"data:image/svg+xml;base64,{base64_content}" if base64_content else name
-
-        params = ["style=for-the-badge", f"logo={logo}", f"logoColor={logo_color}"]
+        params = [
+            "style=for-the-badge",
+            f"logo={logo}",
+            f"logoColor={logo_color.strip('#')}",
+        ]
 
         if "label" in config:
             params.append(f'label={config["label"].replace(" ", "_")}')
@@ -226,29 +271,87 @@ def process_icons(use_tinyurl: bool = True):
             f"https://img.shields.io/badge/{config['name']}-{color}?{query_string}"
         )
 
-        # Shorten the URL only if use_tinyurl is True
-        badge_url = shorten_url(long_url, use_tinyurl)
+        # Reuse existing TinyURL if base64 hasn't changed
+        if (
+            name in processed_badges  # Only if we found an SVG
+            and name in existing_tinyurls
+            and name in existing_base64
+            and base64_content == existing_base64[name]
+        ):
+            badge_url = existing_tinyurls[name]
+            print(f"♻️  Reusing existing TinyURL for {name}")
+            stats["reused_url"] += 1
+
+        elif name in processed_badges:
+            badge_url = shorten_url(long_url, use_tinyurl)
+            print(f"🆕 Generated new TinyURL for {name} with SVG")
+            stats["new_url"] += 1
+
+        else:
+            print(f"📝 Using simple badge for {name}")
+            badge_url = long_url
+            stats["simple_badge"] += 1
+
         badge_def.append(f"[{name}-badge]: {badge_url}\n")
         badge_definitions.append("\n".join(badge_def))
 
-    # Write the complete badges.md file
-    with open("badges.md", "w") as f:
-        f.write('[//]: # "Generated Badge Definitions"\n\n')
-        f.write("".join(color_definitions))
+    # Write output file
+    with open(output_file, "w") as f:
+        f.write(
+            "<!-- ----------------------------------------------------------------------------- -->"
+        )
+        f.write(
+            "\n<!-- ------------------------------ Badge Variables ------------------------------ -->"
+        )
+        f.write(
+            "\n<!-- --------------- Copy and paste the variables in your .md file --------------- -->"
+        )
+        f.write(
+            "\n<!-- ----------------------------------------------------------------------------- -->\n\n"
+        )
         f.write("".join(badge_definitions))
 
-        all_badges = []
+        # all_badges = []
+        # f.write("# Usage Examples:\n")
+        # for name in BADGE_CONFIGS:
+        #     f.write(f"## {BADGE_CONFIGS[name]['name'].replace('_', ' ')}\n")
+        #     f.write(f"[![{name}][{name}-badge]][{name}-url]\n\n")
+        #     all_badges.append(f"[![{name}][{name}-badge]][{name}-url]")
 
-        # Add usage examples
-        f.write("# Usage Examples:\n")
-        for name in BADGE_CONFIGS:
-            f.write(f"## {BADGE_CONFIGS[name]['name'].replace('_', ' ')}\n")
-            f.write(f"[![{name}][{name}-badge]][{name}-url]\n\n")
-            all_badges.append(f"[![{name}][{name}-badge]][{name}-url]")
+        # f.write("# All\n")
+        # f.write("\n".join(all_badges) + "\n\n")
 
-        # Add all badges section
-        f.write("# All\n")
-        f.write("\n".join(all_badges) + "\n\n")
+        # Add all badge names at the end
+        f.write(
+            "\n<!-- ----------------------------------------------------------------------------- -->"
+        )
+        f.write(
+            "\n<!-- -------------------------------- Badge Usage -------------------------------- -->"
+        )
+        f.write(
+            "\n<!-- ---------- Write like this to show badges with the associated URLs ---------- -->"
+        )
+        f.write(
+            "\n<!-- ----------------------------------------------------------------------------- -->\n\n"
+        )
+        f.write("## Example Usage\n\n")
+        f.write(
+            "\n".join(
+                [f"[![{name}][{name}-badge]][{name}-url]" for name in BADGE_CONFIGS]
+            )
+            + "\n"
+        )
+
+    total = len(BADGE_CONFIGS.keys())
+
+    # Print final statistics
+    print("\nProcessing Summary:\n")
+    print(f"⚠️  SVGs Without Configs: {stats['warnings']}")
+    print(f"📊 Total Badges processed: {total}")
+    print(f"🆕 New SVGs: {stats['new_svg']}")
+    print(f"🆕 New URLs Generated: {stats['new_url']}")
+    print(f"♻️  Reused URLs: {stats['reused_url']}")
+    print(f"📝 Simple Badges: {stats['simple_badge']}")
 
 
 if __name__ == "__main__":
