@@ -1,8 +1,17 @@
 # Martin Vågseter Jakobsen
 
-💻 Software Developer | 🌐 Web & 📱 App | 🎓 Physics BSc & MSc | 🎓 Computer Science BSc
+💻 Fullstack Software Developer | 🌐 Web & 📱 App | 🎓 Physics BSc & MSc | 🎓 Computer Science BSc
 
-## 🔭 Current Projects
+<!-- ---
+
+<p style="display: flex; justify-content: start; gap: 6px;">
+  <a href="#projects">🔭 Projects</a> •
+  <a href="#tech-stack">🛠️ Tech Stack</a> •
+  <a href="#stats">📈 Stats</a> •
+  <a href="#links">🔗 Links</a>
+</p> -->
+
+<h2 id="projects">🔭 Current Projects
 
 ### Public
 
@@ -15,9 +24,9 @@
 - 💼 **Portfolio** (website): Personal website for showcasing previous projects. Building with Next.js 15 and the Strapi 5 headless CMS.
 - ⌛ **Temporas** (desktop/mobile): Productivity app for tracking your time. Building with Flutter and AWS Amplify (AppSync, Cognito, DynamoDB).
 
-## 🛠️ Tech Stack
+<h2 id="tech-stack">🛠️ Tech Stack</h2>
 
-### Languages
+### Main Languages
 
 [![python][python-badge]][python-url]
 [![typescript][typescript-badge]][typescript-url]
@@ -28,7 +37,10 @@
 
 ### Frontend & UI
 
+[![vite][vite-badge]][vite-url]
 [![nextjs][nextjs-badge]][nextjs-url]
+[![tauri][tauri-badge]][tauri-url]
+[![electron][electron-badge]][electron-url]
 [![flutter][flutter-badge]][flutter-url]
 [![react][react-badge]][react-url]
 [![tailwindcss][tailwindcss-badge]][tailwindcss-url]
@@ -38,8 +50,9 @@
 
 [![nodejs][nodejs-badge]][nodejs-url]
 [![express_js][express_js-badge]][express_js-url]
-[![apollo_graphql][apollo_graphql-badge]][apollo_graphql-url]
 [![spring_boot][spring_boot-badge]][spring_boot-url]
+[![graphql][graphql-badge]][graphql-url]
+[![apollo_graphql][apollo_graphql-badge]][apollo_graphql-url]
 [![flask][flask-badge]][flask-url]
 [![strapi][strapi-badge]][strapi-url]
 [![firebase][firebase-badge]][firebase-url]
@@ -52,7 +65,6 @@
 [![mysql][mysql-badge]][mysql-url]
 [![mongodb][mongodb-badge]][mongodb-url]
 [![aws_dynamodb][aws_dynamodb-badge]][aws_dynamodb-url]
-[![neon][neon-badge]][neon-url]
 [![aws_s3][aws_s3-badge]][aws_s3-url]
 
 ### Cloud & Infrastructure
@@ -60,23 +72,23 @@
 [![aws][aws-badge]][aws-url]
 [![vercel][vercel-badge]][vercel-url]
 [![render][render-badge]][render-url]
+[![neon][neon-badge]][neon-url]
 [![docker][docker-badge]][docker-url]
 
 ### Development Tools
 
-[![vite][vite-badge]][vite-url]
-[![tauri][tauri-badge]][tauri-url]
 [![maven][maven-badge]][maven-url]
-[![cypress][cypress-badge]][cypress-url]
-[![vitest][vitest-badge]][vitest-url]
 [![junit][junit-badge]][junit-url]
+[![vitest][vitest-badge]][vitest-url]
+[![cypress][cypress-badge]][cypress-url]
+[![msw][msw-badge]][msw-url]
 
-## 📈 GitHub Stats
+<h2 id="stats">📈 GitHub Stats</h2>
 
 <div style="display: flex; justify-content: center; gap: 10px;">
   <img 
     height=200 
-    src="https://github-readme-stats-git-master-martivj-private.vercel.app/api?username=martivj&show_icons=true&theme=dracula&line_height=29" 
+    src="https://github-readme-stats-git-master-martivj-private.vercel.app/api?username=martivj&show_icons=true&theme=github_dark_dimmed&line_height=29" 
     alt="Martin's GitHub Stats - Commits, PRs, Issues and Contributions" />
   <!-- <img 
     height=200 
@@ -84,18 +96,37 @@
     alt="Martin's Most Used Languages" /> -->
   <img 
     height=200 
-    src="https://github-readme-stats-git-master-martivj-private.vercel.app/api/top-langs/?username=martivj&layout=donut&theme=dracula&hide=jupyter%20notebook" 
+    src="https://github-readme-stats-git-master-martivj-private.vercel.app/api/top-langs/?username=martivj&layout=donut&theme=github_dark_dimmed&hide=jupyter%20notebook" 
     alt="Martin's Most Used Languages" />
 </div>
 
-## 🤝 Let's Connect
+<h2 id="links">🔗 Links</h2>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=000000&labelColor=ffffff)](https://martivj.com)
-[![linkedin][linkedin-badge]][linkedin-url]
+<div style="display: flex; gap: 12px; margin-top: -12px;">
+  <div>
+    <h3>Contact Me</h3>
+    <a href="mailto:martinvagseterjakobsen@yahoo.no">
+      <img src="https://tinyurl.com/27f9hqvj" alt="Email">
+    </a>
+    <a href="https://linkedin.com/in/martin-vågseter-jakobsen-57157a224/">
+      <img src="https://tinyurl.com/25tqk9q9" alt="LinkedIn">
+    </a>
+  </div>
+
+  <div>
+    <h3>Portfolio (WIP)</h3>
+    <a href="https://martivj.com">
+      <img src="https://img.shields.io/badge/martivj.com-9bc2ef?style=for-the-badge&logo=vercel&logoColor=08374a&labelColor=ffffff" alt="Portfolio">
+    </a>
+  </div>
+</div>
 
 ---
 
-⭐️ From [martivj](https://github.com/martivj)
+<!-- ----------------------------------------------------------------------------- -->
+<!-- ------------------------------ Badge Variables ------------------------------ -->
+<!-- --------------- Copy and paste the variables in your .md file --------------- -->
+<!-- ----------------------------------------------------------------------------- -->
 
 [tauri-url]: https://tauri.app/
 [tauri-badge]: https://tinyurl.com/29cu2oxf
@@ -113,6 +144,8 @@
 [flutter-badge]: https://tinyurl.com/22dyujfc
 [python-url]: https://www.python.org/
 [python-badge]: https://tinyurl.com/26vvmywy
+[graphql-url]: https://graphql.org/
+[graphql-badge]: https://tinyurl.com/2bmau9rf
 [nextjs-url]: https://nextjs.org/
 [nextjs-badge]: https://tinyurl.com/2bxnhgfa
 [vite-url]: https://vitejs.dev/
@@ -130,7 +163,7 @@
 [express_js-url]: https://expressjs.com/
 [express_js-badge]: https://tinyurl.com/2arnfjdh
 [apollo_graphql-url]: https://www.apollographql.com/
-[apollo_graphql-badge]: https://tinyurl.com/2dood594
+[apollo_graphql-badge]: https://tinyurl.com/273e5raq
 [flask-url]: https://flask.palletsprojects.com/
 [flask-badge]: https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=000000&labelColor=ffffff
 [strapi-url]: https://strapi.io/
@@ -167,3 +200,9 @@
 [aws_s3-badge]: https://tinyurl.com/2bmjxtay
 [docker-url]: https://www.docker.com/
 [docker-badge]: https://tinyurl.com/278rykn6
+[email-url]: mailto:martinvagseterjakobsen@yahoo.no
+[email-badge]: https://tinyurl.com/27f9hqvj
+[msw-url]: https://mswjs.io/
+[msw-badge]: https://tinyurl.com/2cj82qur
+[electron-url]: https://www.electronjs.org/
+[electron-badge]: https://tinyurl.com/2anapt3o

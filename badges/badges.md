@@ -19,6 +19,8 @@
 [flutter-badge]: https://tinyurl.com/22dyujfc
 [python-url]: https://www.python.org/
 [python-badge]: https://tinyurl.com/26vvmywy
+[graphql-url]: https://graphql.org/
+[graphql-badge]: https://tinyurl.com/2bmau9rf
 [nextjs-url]: https://nextjs.org/
 [nextjs-badge]: https://tinyurl.com/2bxnhgfa
 [vite-url]: https://vitejs.dev/
@@ -36,7 +38,7 @@
 [express_js-url]: https://expressjs.com/
 [express_js-badge]: https://tinyurl.com/2arnfjdh
 [apollo_graphql-url]: https://www.apollographql.com/
-[apollo_graphql-badge]: https://tinyurl.com/2dood594
+[apollo_graphql-badge]: https://tinyurl.com/273e5raq
 [flask-url]: https://flask.palletsprojects.com/
 [flask-badge]: https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=000000&labelColor=ffffff
 [strapi-url]: https://strapi.io/
@@ -73,6 +75,12 @@
 [aws_s3-badge]: https://tinyurl.com/2bmjxtay
 [docker-url]: https://www.docker.com/
 [docker-badge]: https://tinyurl.com/278rykn6
+[email-url]: mailto:martinvagseterjakobsen@yahoo.no
+[email-badge]: https://tinyurl.com/27f9hqvj
+[msw-url]: https://mswjs.io/
+[msw-badge]: https://tinyurl.com/2cj82qur
+[electron-url]: https://www.electronjs.org/
+[electron-badge]: https://tinyurl.com/2anapt3o
 
 <!-- ----------------------------------------------------------------------------- -->
 <!-- -------------------------------- Badge Usage -------------------------------- -->
@@ -89,6 +97,7 @@
 [![dart][dart-badge]][dart-url]
 [![flutter][flutter-badge]][flutter-url]
 [![python][python-badge]][python-url]
+[![graphql][graphql-badge]][graphql-url]
 [![nextjs][nextjs-badge]][nextjs-url]
 [![vite][vite-badge]][vite-url]
 [![mongodb][mongodb-badge]][mongodb-url]
@@ -116,3 +125,6 @@
 [![firebase][firebase-badge]][firebase-url]
 [![aws_s3][aws_s3-badge]][aws_s3-url]
 [![docker][docker-badge]][docker-url]
+[![email][email-badge]][email-url]
+[![msw][msw-badge]][msw-url]
+[![electron][electron-badge]][electron-url]

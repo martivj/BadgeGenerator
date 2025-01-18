@@ -54,12 +54,12 @@
     "url": "https://www.python.org/",
     "label_color": "#24292e"
   },
-  // "graphql": {
-  //   "name": "GraphQL",
-  //   "color": "#E10098",
-  //   "url": "https://graphql.org/",
-  //   "label_color": "#24292e"
-  // },
+  "graphql": {
+    "name": "GraphQL",
+    "color": "#E10098",
+    "url": "https://graphql.org/",
+    "label_color": "#24292e"
+  },
   "nextjs": {
     "name": "Next.js",
     "color": "#000000",
@@ -116,7 +116,7 @@
     "label_color": "#ffffff"
   },
   "apollo_graphql": {
-    "name": "Apollo_GraphQL",
+    "name": "Apollo",
     "color": "#4b325d",
     "logo_color": "#ffffff",
     "url": "https://www.apollographql.com/",
@@ -229,6 +229,25 @@
     "name": "Docker",
     "color": "#2496ed",
     "url": "https://www.docker.com/",
+    "label_color": "#24292e"
+  },
+  "email": {
+    "name": "Email",
+    "color": "#ffffff",
+    "logo_color": "#ffffff",
+    "url": "mailto:martinvagseterjakobsen@yahoo.no",
+    "label_color": "#24292e"
+  },
+  "msw": {
+    "name": "MSW",
+    "color": "#ff6a33",
+    "url": "https://mswjs.io/",
+    "label_color": "#24292e"
+  },
+  "electron": {
+    "name": "Electron",
+    "color": "#47848F",
+    "url": "https://www.electronjs.org/",
     "label_color": "#24292e"
   }
 }
