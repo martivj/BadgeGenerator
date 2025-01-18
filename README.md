@@ -125,20 +125,20 @@
 
 <h2 id="links">🔗 Links</h2>
 
-<table style="margin-top: -18px;">
-  <tr>
-    <td>
+<table style="margin-top: -18px; border-collapse: collapse;">
+  <tr style="border: none;">
+    <td style="border: none;">
       <h3>Contact Me</h3>
-      <a href="mailto:martinvagseterjakobsen@yahoo.no">
-        <img src="https://tinyurl.com/27f9hqvj" alt="Email">
+      <a href="mailto:martinvagseterjakobsen@yahoo.no" style="text-decoration: none;">
+        <img src="https://tinyurl.com/27f9hqvj" alt="Email" style="margin-right: 6px;">
       </a>
-      <a href="https://linkedin.com/in/martin-vågseter-jakobsen-57157a224/">
+      <a href="https://linkedin.com/in/martin-vågseter-jakobsen-57157a224/" style="text-decoration: none;">
         <img src="https://tinyurl.com/25tqk9q9" alt="LinkedIn">
       </a>
     </td>
-    <td style="padding-left: 20px;">
+    <td style="border: none; padding-left: 20px;">
       <h3>Portfolio (WIP)</h3>
-      <a href="https://martivj.com">
+      <a href="https://martivj.com" style="text-decoration: none;">
         <img src="https://img.shields.io/badge/martivj.com-9bc2ef?style=for-the-badge&logo=vercel&logoColor=08374a&labelColor=ffffff" alt="Portfolio">
       </a>
     </td>
