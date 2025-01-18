@@ -304,6 +304,9 @@ def process_icons(use_tinyurl: bool = True):
             "\n<!-- ------------------------------ Badge Variables ------------------------------ -->"
         )
         f.write(
+            "\n<!-- ----- Generated with the https://github.com/martivj/BadgeGenerator tool ----- -->"
+        )
+        f.write(
             "\n<!-- --------------- Copy and paste the variables in your .md file --------------- -->"
         )
         f.write(
