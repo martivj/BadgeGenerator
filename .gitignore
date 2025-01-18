@@ -1,0 +1,9 @@
+# Python virtual environment
+.conda/
+
+# Generated files
+badges/badges.md
+badges/base64/*
+
+# SVG icons
+badges/icons/*.svg
