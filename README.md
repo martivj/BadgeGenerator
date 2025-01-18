@@ -1,4 +1,4 @@
-# Badge Generator
+# BadgeGenerator
 
 This is a simple Python based tool to generate badges for your projects, powered by [shields.io](https://shields.io/docs/logos) and [tinyurl](https://tinyurl.com/).
 You can use the generated badges in your `README.md` or other markdown files to show off the technologies you are using in your project.
