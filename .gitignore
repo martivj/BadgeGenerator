@@ -8,3 +8,6 @@ badges/base64/*
 
 # SVG icons
 badges/icons/*.svg
+
+# Badge configurations
+badges/badge_configs.jsonc
