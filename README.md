@@ -12,14 +12,15 @@ You can use the generated badges in your `README.md` or other markdown files to 
 3. Open a terminal and navigate to the [`badges`](.) directory.
 4. Run `pip install -r requirements.txt` to install the required packages.
 5. Place your SVGs in the [`icons`](icons) directory.
-6. Define configs for each badge in the [`badge_configs.jsonc`](badge_configs.jsonc) file (see format below).
+6. Create a `badge_configs.jsonc` file in the `badges` directory (see format below).
 7. Run `python badge_generator.py` to generate your badges.
-8. The generated badges can be found in the [`badges.md`](badges.md) file.
-9. Copy the badges from [`badges.md`](badges.md) to your `README.md` or other markdown files.
+8. The generated badges will be saved to `badges.md` in the `badges` directory.
+   - Note: A `base64` folder will be created containing base64-encoded versions of your SVGs. These are used by the badge generator and can be ignored.
+9. Copy the generated badge definitions from `badges.md` to your `README.md` or other markdown files.
 
 ### Badge Configs
 
-The badge configs are defined in the [`badge_configs.jsonc`](badge_configs.jsonc) file. The format is as follows:
+The badge configs are defined in a `badge_configs.jsonc` file in the [`badges`](.) directory. The format is as follows:
 
 ```jsonc
 {
@@ -39,11 +40,11 @@ The badge configs are defined in the [`badge_configs.jsonc`](badge_configs.jsonc
 }
 ```
 
-The fields are as follows:
+Each field impacts the appearance of the badge:
 
 - `<svg_stem>`: The stem of the SVG file name (without the `.svg` extension).
   - If an SVG is not found, the badge will try to find a [SimpleIcons](https://simpleicons.org/) logo that matches the name.
-  - If a SimpleIcons logo is not found, the badge will not display a logo.
+  - If a SimpleIcons logo is also not found, the badge will not display a logo.
 - `<badge_name>`: Text to display on the right side of the badge.
 - `<label>`: Text to display on the left side of the badge.
   - If this field is not provided, the left side will still display the logo.
