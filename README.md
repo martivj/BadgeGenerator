@@ -100,7 +100,7 @@
     alt="Martin's Most Used Languages" />
 </div>
 
-<h2 id="links">🔗 Links</h2>
+<!-- <h2 id="links">🔗 Links</h2>
 
 <div style="display: flex; gap: 12px; margin-top: -12px;">
   <div>
@@ -121,7 +121,29 @@
   </div>
 </div>
 
----
+--- -->
+
+<h2 id="links">🔗 Links</h2>
+
+<table style="margin-top: -18px;">
+  <tr>
+    <td>
+      <h3>Contact Me</h3>
+      <a href="mailto:martinvagseterjakobsen@yahoo.no">
+        <img src="https://tinyurl.com/27f9hqvj" alt="Email">
+      </a>
+      <a href="https://linkedin.com/in/martin-vågseter-jakobsen-57157a224/">
+        <img src="https://tinyurl.com/25tqk9q9" alt="LinkedIn">
+      </a>
+    </td>
+    <td style="padding-left: 20px;">
+      <h3>Portfolio (WIP)</h3>
+      <a href="https://martivj.com">
+        <img src="https://img.shields.io/badge/martivj.com-9bc2ef?style=for-the-badge&logo=vercel&logoColor=08374a&labelColor=ffffff" alt="Portfolio">
+      </a>
+    </td>
+  </tr>
+</table>
 
 <!-- ----------------------------------------------------------------------------- -->
 <!-- ------------------------------ Badge Variables ------------------------------ -->
