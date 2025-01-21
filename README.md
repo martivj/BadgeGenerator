@@ -3,7 +3,7 @@
 This is a simple Python based tool to generate badges for your projects, powered by [shields.io](https://shields.io/docs/logos) and [tinyurl](https://tinyurl.com/).
 You can use the generated badges in your `README.md` or other markdown files to show off the technologies you are using in your project.
 
-Future plans include adding more customization options for the badges and deploying the tool as a web service (see [Future Work](#future-work)).
+Future plans include adding more customization options for the badges and deploying the tool as a web service (see [Future Plans](#future-plans)).
 
 ## Usage
 
@@ -58,7 +58,7 @@ Each field impacts the appearance of the badge:
   - If this field is not provided, the logo will have its original colors.
 - `<url>`: The URL to link to when the badge is clicked.
 
-## Future Work
+## Future Plans
 
 - [ ] Add more customization options for styling the badges.
 - [ ] Make a web-based interface for the tool.
