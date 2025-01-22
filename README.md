@@ -5,6 +5,9 @@ You can use the generated badges in your `README.md` or other markdown files to 
 
 Future plans include adding more customization options for the badges and deploying the tool as a web service (see [Future Plans](#future-plans)).
 
+[![python][python-badge]][python-url]
+[![json][json-badge]][json-url]
+
 ## Usage
 
 ### Step-by-Step Guide
@@ -63,3 +66,14 @@ Each field impacts the appearance of the badge:
 - [ ] Add more customization options for styling the badges.
 - [ ] Make a web-based interface for the tool.
 - [ ] Deploy the tool as a web service.
+
+<!-- ----------------------------------------------------------------------------- -->
+<!-- ------------------------------ Badge Variables ------------------------------ -->
+<!-- ----- Generated with the https://github.com/martivj/BadgeGenerator tool ----- -->
+<!-- --------------- Copy and paste the variables in your .md file --------------- -->
+<!-- ----------------------------------------------------------------------------- -->
+
+[python-url]: https://www.python.org/
+[python-badge]: https://tinyurl.com/26vvmywy
+[json-url]: https://www.json.org/
+[json-badge]: https://tinyurl.com/2dadqqhj
