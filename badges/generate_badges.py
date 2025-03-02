@@ -267,9 +267,9 @@ def process_icons(use_tinyurl: bool = True):
             params.append(f'labelColor={config["label_color"].strip("#")}')
 
         query_string = "&".join(params)
-        long_url = (
-            f"https://img.shields.io/badge/{config['name']}-{color}?{query_string}"
-        )
+        import urllib.parse
+
+        long_url = f"https://img.shields.io/badge/{urllib.parse.quote(config['name'])}-{color}?{query_string}"
 
         # Reuse existing TinyURL if base64 hasn't changed
         if (

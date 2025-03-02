@@ -5,6 +5,7 @@ venv/
 # Generated files
 badges/badges.md
 badges/base64/*
+.DS_Store
 
 # SVG icons
 badges/icons/*.svg

@@ -18,7 +18,7 @@ Future plans include adding more customization options for the badges and deploy
 4. Run `pip install -r requirements.txt` to install the required packages.
 5. Place your SVGs in the [`icons`](icons) directory.
 6. Create a `badge_configs.jsonc` file in the `badges` directory (see format below).
-7. Run `python badge_generator.py` to generate your badges.
+7. Run `python generate_badges.py` to generate your badges.
 8. The generated badges will be saved to `badges.md` in the `badges` directory.
    - Note: A `base64` folder will be created containing base64-encoded versions of your SVGs. These are used by the badge generator and can be ignored.
 9. Copy the generated badge definitions from `badges.md` to your `README.md` or other markdown files.
